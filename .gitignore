@@ -1,0 +1,53 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# MLflow — don't track run artifacts, only track the config if needed
+mlruns/
+mlartifacts/
+
+# DVC cache (large binary cache, not needed in git)
+.dvc/cache/
+.dvc/tmp/
+
+# Model artifacts (tracked by DVC or mlflow, not raw git)
+models/*.pkl
+models/*.joblib
+models/*.model
+models/*.bin
+
+# Data files — the actual CSVs are tracked by DVC, not git
+# (DVC will create .dvc pointer files which ARE committed to git)
+data/*.csv
+data/*.json
+data/*.parquet
+
+# Reports / outputs
+reports/figures/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+
+.claude/
