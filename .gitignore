@@ -36,6 +36,9 @@ models/*.bin
 data/*.csv
 data/*.json
 data/*.parquet
+dataset/*.csv
+dataset/*.json
+dataset/*.parquet
 
 # Reports / outputs
 reports/figures/
